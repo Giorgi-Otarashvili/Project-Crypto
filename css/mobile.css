@@ -1,0 +1,51 @@
+@media (max-width:490px) {
+  /* header  */
+  header {
+    padding: 40px 25px;
+}
+header.sticky  {
+    padding: 10px 30px;
+    background: #fff;
+}
+      /* about Us  */
+      .about_txt_h2 {
+        text-align: center;
+      }
+      .respons {
+        display: none;
+      }
+  
+      /* COIN MARKET  */
+      .rank , .tr1_rank {
+        display: none;
+      }
+      .market_titles {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+      }
+    }
+
+    @media (max-width:430px) {
+      /* COIN MARKET  */
+      .high-low , .tr1_24h {
+        display: none;
+      }
+    }
+
+    @media (max-width:354px) {
+        .respons1 {
+      /* about Us  */
+
+            display: none;
+        }
+        /* Coin Market  */
+        .percentage , .tr1_7d {
+          display: none;
+    }
+
+  
+    }
+
+
+   

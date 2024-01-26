@@ -1,0 +1,65 @@
+@media (max-width: 790px) {
+    /* Header  */
+
+     header {
+        padding: 40px 40px;
+    }
+    header.sticky  {
+        padding: 10px 50px;
+        background: #fff;
+    }
+    .headerUl {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .show {
+        left: 0;
+    }
+
+    /* CONVERTOR  */
+    .ConverterDiv {
+        max-width: 70%;
+    }
+    /* Footer  */
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+
+
+}
+
+
+@media (max-width:655px) {
+    /* COINMARKET  */
+    .symbol {
+        display: none;
+    }
+    .tr1_symbol {
+        display: none;
+    }
+}
+@media (max-width: 560px) {
+    /* COINMARKET  */
+  
+
+    .high-low1 , .tr1_1h {
+        display: none;
+    }
+
+    #searchInput {
+        padding: 3px;
+    }
+     /* CONVERTOR  */
+     .ConverterDiv {
+        max-width: 80%;
+    }
+.Converter_p {
+    font-size: 15px;
+}
+
+}

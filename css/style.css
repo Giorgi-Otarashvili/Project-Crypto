@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+  .container {
+    /* width: min(100%, 1440px); */
+    margin: auto;
+    /* border: 10px solid red; */
+ 
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+ 
+}
+
+
+
+
+/* HEADER  */
+header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    padding: 40px 100px;
+    z-index: 100;
+    background-color: #000;
+}
+header.sticky  {
+    padding: 10px 100px;
+    background: #fff;
+}
+
+header .main_logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+font-size: 25px;
+text-transform: uppercase;
+letter-spacing:2px ;
+transition: 0.6s;
+font-family: 'Roboto Slab', serif;
+
+}
+
+.headerUl {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.headerUl_a{
+position: relative;
+margin: 0 15px;
+text-decoration: none;
+color: #fff;
+letter-spacing:2px ;
+transition: 0.6s;
+font-weight: 500px;
+}
+
+
+
+header.sticky .headerUl_a  {
+    color: #000;
+}
+
+header.sticky .main_logo ,header.sticky .burger {
+    color: #000;
+font-size: 20px;
+padding: 10px 0;
+}
+
+
+/* SLIDER  */
+
+/* .none {
+    display: none;
+}
+.active {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+background-position: center ;
+object-fit: cover;
+animation: showIMg .5s forwards;
+z-index: -1000000;
+} */
+
+
+
+
+/* BURGER MENU  */
+.menu {
+    display: block;
+    width: 30%;
+    background-color: transparent;
+ position: absolute;
+ top: 120px;
+    left: -100%;
+ transition: .8s linear;
+
+
+}
+.menu li {
+   
+    border-bottom: 1px solid rgb(130, 117, 208);
+    padding: 30px 0;
+    text-align: center;
+}
+.menu li:first-child a {
+    font-weight: bold;
+}
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li a {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight 0.2s;
+}
+.menu li a:hover {
+    font-weight: bold;
+}
+
+.burger,
+.fa-xmark {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+/* SECTION  */
+/* Weather API  */
+
+.banner {
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/eth.jpg);
+    height: 1000px;
+}
+ .card_div {
+  
+    transition: opacity 1s ease;
+}
+
+.card_div_background {
+    /* position: absolute;
+     top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);  */
+    /* max-width: 400px; */
+    width: 100%;
+    padding: 20px;
+        border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: rgba(13, 14, 26, 0.6);
+}
+.crypto {
+    text-align: center;
+
+    width: 100%;
+    margin: 170px auto  15px;
+    box-sizing: border-box;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: none;
+    max-width: 80%;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.ConverterDiv {
+    text-align: center;
+    margin: 170px auto  15px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    border: none;
+    max-width: 50%;
+    display: none;
+
+    /* max-height: 600px; */
+ 
+}
+.display_hide {
+opacity: 0;
+}
+.hide-card {     
+    opacity: 0;
+/* ჯავასკრიპტიდან ვაქრობ კონტენტს ბურგერისთვის  */
+    pointer-events: none;   
+  }
+
+.weather_h1, .registerH1 , .cripto_h1 {
+font-family: 'Roboto Slab', serif;
+font-size: 20px;
+    text-align: center;
+    color: #fff; 
+margin-bottom: 20px;
+text-align:center;
+}
+#city,#username,#password,#firstName,#lastName,#amount  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Playfair Display'
+}
+
+.savepass {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Playfair Display'
+}
+.crypto_btn:hover {
+    background-color: #0a0c3e;
+
+}
+#submitData:hover {
+    background-color: #0a0c3e;
+}
+#city::placeholder {
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display'
+}
+#result {
+text-align: center;
+    width: 100%;
+    margin: 10px 0 ;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+
+.fa-sun {
+    color: yellow;
+}
+
+
+ /* footer  */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    padding: 40px 100px;
+    z-index: 100;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+letter-spacing:2px ;
+transition: 0.6s;
+font-weight: 500px;
+
+}
+
+
+.footer_txt {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing:2px ;
+    transition: 0.6s;
+    font-weight: 500px;
+    text-align: center;
+}
+.footer_txt:hover {
+    scale: 1.1;
+} 
+
+.footer_right_icons {
+    color: #fff;
+}
+.footer_rightbox {
+    display: flex;
+}
+.footer_rightbox_mail {
+    margin-inline: 20px;
+}
+
+.logo_BOX {
+display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: 20px;}
+
+/* ABOUT US */
+
+.about_txt {
+    color: #fff;
+    position: absolute;
+    margin: 150px 50px;
+    width: 70%;
+    padding: 20px;
+    transition: opacity 1s ease;
+}
+
+.about_txt_h2 {
+    font-family: 'Roboto Slab', serif;
+font-size: 30px;
+    text-align: center;
+    color: #fff; 
+margin-bottom: 20px;
+text-align:left;
+}
+
+.about_p {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing:2px ;
+    transition: 0.6s;
+    font-weight: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about_h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+        text-align: center;
+        color: #fff; 
+    margin-bottom: 20px;
+    text-align:left;
+}
+
+/* CRYPTO  */
+
+
+
+
+.cripto_span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+        text-align: center;
+        color: #fff; 
+    margin-bottom: 20px;
+    text-align:center
+}
+
+.swap {
+    color: rgb(21, 152, 245);
+    margin-bottom: 5px;
+}
+#select1 , #select2  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fbde07;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+
+#select2 {
+
+    color: rgb(45, 191, 9);
+    
+}
+
+.fa-coins {
+    margin-left: 20px;
+    color: #fbde07;
+}
+
+
+
+/* COIN MARKET  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #540303;
+}
+
+.rank {
+    width: 5%;
+}
+.symbol {
+    width: 5%;
+}
+
+.name {
+    width: 20%;
+}
+
+.high-low , .high-low1, .percentage  {
+    width: 15%;
+}
+
+.price {
+    width: 15%;
+}
+.tr1_name {
+    color:gold;
+    font-family: 'Roboto Slab', serif;
+
+}
+.tr1_symbol {
+    color: darkgray;
+}
+.tr1_price {
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif;
+color: gold;
+}
+.coinsLogos {
+    width: 30px;
+    height: 20px;
+}
+
+
+.market::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.market::-webkit-scrollbar-thumb {
+    background-color: red; 
+    border-radius: 6px;
+}
+
+.market::-webkit-scrollbar-track {
+    background-color: blue; 
+}
+.tr1_symbol {
+    color: #ccc;
+}
+.logo {
+    display: none;
+}
+.market_titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+.Crypto_h2 {
+    /* margin-bottom: 10px; */
+font-family: 'Roboto Slab', serif;
+text-transform: uppercase;
+font-size: 25px;
+color:gold;
+}
+.Converter_p {
+    font-family: 'Roboto Slab', serif;
+text-transform: uppercase;
+font-size: 20px;
+color:red;
+animation: showIMg 3s linear infinite;
+cursor: pointer;
+width: 200px;
+}
+.backToMarket {
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    font-size: 18px;
+    color:red;
+    animation: showIMg 3s linear infinite;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto 20px
+}
+
+
+@keyframes showIMg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#searchInput {
+    
+    width: 200px;
+    /* margin: auto; */
+      padding: 10px;
+    /* margin-bottom: 10px; */
+    /* box-sizing: border-box; */
+    border: 1px solid red;
+    border-radius: 4px;
+    color: #000000;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+
+/* LogIn  */ 
+.login_h3 {
+    font-family: 'Roboto Slab', serif;
+font-size: 20px;
+    text-align: center;
+    color: #fff; 
+margin-bottom: 18px;
+text-align:center;
+}
+
+/* Login SUccess  */ 
+.subscription_p {
+    color: #fff;
+}
+
+

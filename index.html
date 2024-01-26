@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <link rel="shortcut icon" href="images/coinicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/37ef17b599.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header  -->
+        <header>
+            <a href="index.html" class="main_logo">Crypto.Com<i class="fa-solid  fa-earth-europe"></i></a>
+            <ul class="headerUl">
+                <li><a href="weather.html" class="headerUl_a">Weather</a></li>
+
+                <li><a href="aboutus.html" class="headerUl_a">About Us</a></li>
+                <li><a href="registerForm.html" class="headerUl_a">Registration</a></li>
+                <li><a href="loginForm.html" class="headerUl_a">Log In</a></li>
+
+            </ul>
+            <i class="fa-solid fa-bars burger"></i>
+            <i class="fa-solid fa-xmark"></i>
+
+
+        </header>
+        <!-- section  -->
+        <section class="banner">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="registerForm.html">Registration</a></li>
+                <li><a href="loginForm.html">Log In</a></li>
+            </ul>
+            <p class="display_hide">abrakadabra</p>
+
+            <div class="card_div card_div_background  crypto market ">
+                <h2 class="Crypto_h2">Crypto Table</h2>
+            <div class="market_titles">
+                <input type="text" id="searchInput" placeholder="Search Coin" onkeyup="searchCoin()">
+                <p class="Converter_p">Click here for the converter</p>
+
+            </div>
+                <table class="coin-table">
+                    <thead>
+                        <tr>
+                            <th class="rank">Rank #</th>
+                            <th class="name">Name</th>
+                            <th class="symbol">Symbol</th>
+                            <th class="high-low1">1h</th>
+                            <th class="high-low">24h</th>
+                            <th class="percentage">7d</th>
+                            <th class="price">Current Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <!-- <tr class="tr1 ">
+                            <td class="tr1_rank">1</td>
+                            <td class="tr1_name"></td>
+                            <td class="tr1_symbol"></td>
+                            <td class="tr1_1h"></td>
+                            <td class="tr1_24h"></td>
+                            <td class="tr1_7d"></td>
+                            <td class="tr1_price"></td>
+                        </tr>
+   -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="card_div card_div_background  ConverterDiv">
+                <h1 class="cripto_h1">Crypto Converter<i class="fa-solid fa-coins"></i></h1>
+                <p class="backToMarket">Back To Market</p>
+
+                <select id="select1"></select>
+
+                <span class="cripto_span">To</span>
+
+                <select id="select2"></select>
+
+                <button class="crypto_btn swap" onclick="swapCurrencies()">Swap</button>
+
+                <input type="text" placeholder="Enter amount" id="amount">
+
+                <button class="crypto_btn" onclick="converter()">Submit</button>
+
+                <p id="result"></p>
+            </div>
+            <!-- <div class="slider">
+                <img class=" none active " src="images/crypto.jpg" alt="">
+
+                <img class="none " src="images/eth.jpg" alt="">
+                <img class="none" src="images/solana.png" alt="">
+                <img class="none" src="images/tet.jpg" alt="">
+                <img class="none" src="images/bnb.jpg" alt="">
+                <img class="none " src="images/usd.png" alt="">
+
+            </div> -->
+            <!-- <a class="previous" onclick="pervSlide()"></a>
+            <a class="next" onclick="nextSlide()"></a> -->
+        </section>
+        <!-- footer  -->
+    </div>
+
+        <footer>
+            <div class="footer_leftbox">
+                <a href="aboutus.html">
+                    <p class="footer_txt">Contact Us</p>
+                </a>
+
+
+
+            </div>
+            <div class="logo_BOX">
+                <div class="logo_BOX_div1"> <a href="https://www.youtube.com/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="youtube" src="images/logos_youtube.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="instagram" src="images/skill-icons_instagram.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="facebook" src="images/logos_facebook.svg" alt="">
+                    </a>
+                </div>
+                <div class="copirait_text">
+                    <p class="footer_txt">&copy; 2024 Meteo.com All rights reserved.</p>
+                </div>
+            </div>
+            <div class="footer_rightbox">
+                <div class="footer_rightbox_tel">
+                    <a href="tel:+123 45 67  89">
+                        <i class="fa-solid fa-phone footer_right_icons"><span class="footer_rightbox_texts">
+                            </span> </i> </a>
+                </div>
+                <div class="footer_rightbox_mail">
+
+
+                    <a href="mailto:gio.otarashvili1@gmail.com">
+                        <i class="fa-regular fa-envelope footer_right_icons"><span class="footer_rightbox_texts"></span>
+                        </i>
+                    </a>
+                </div>
+                <a href="https://maps.app.goo.gl/brpzedf5r9zjbfc88" target="_blank" rel="noopener noreferrer">
+
+                    <i class="fa-solid fa-location-dot footer_right_icons"><span
+                            class="footer_rightbox_texts address_icon"></span></i>
+
+                </a>
+            </div>
+        </footer>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/coinmarket.js"></script>
+</body>
+
+</html>
