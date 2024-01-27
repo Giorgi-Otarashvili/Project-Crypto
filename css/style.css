@@ -538,6 +538,8 @@ color:red;
 animation: showIMg 3s linear infinite;
 cursor: pointer;
 width: 200px;
+border: 1px solid red;
+background-color: #fff;
 }
 .backToMarket {
     font-family: 'Playfair Display';
