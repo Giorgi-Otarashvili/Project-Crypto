@@ -11,9 +11,6 @@ header.sticky  {
       .about_txt_h2 {
         text-align: center;
       }
-      .respons {
-        display: none;
-      }
   
       /* COIN MARKET  */
       .rank , .tr1_rank {
@@ -24,6 +21,14 @@ header.sticky  {
         align-items: center;
         row-gap: 15px;
       }
+          /* WEATHER  */
+    .weather_box {
+      max-width: 80%;
+          }
+          /* LOGINSUCCESS  */
+          .loginSuccess_box {
+            max-width: 85%;
+          }
     }
 
     @media (max-width:430px) {
@@ -31,14 +36,17 @@ header.sticky  {
       .high-low , .tr1_24h {
         display: none;
       }
+       /* about Us  */
+
+       .respons {
+        display: none;
+      }
     }
 
     @media (max-width:354px) {
-        .respons1 {
-      /* about Us  */
-
-            display: none;
-        }
+        
+     
+  
         /* Coin Market  */
         .percentage , .tr1_7d {
           display: none;
@@ -49,3 +57,4 @@ header.sticky  {
 
 
    
+    

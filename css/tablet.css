@@ -18,8 +18,8 @@
         left: 0;
     }
 
-    /* CONVERTOR  */
-    .ConverterDiv {
+    /* CONVERTOR REGISTRAION LOGIN LOGINSUCCESS  */
+    .ConverterDiv , .register_box, .loginform_box ,.loginSuccess_box  {
         max-width: 70%;
     }
     /* Footer  */
@@ -42,6 +42,10 @@
     .tr1_symbol {
         display: none;
     }
+        /* WEATHER  */
+        .weather_box {
+            max-width: 70%;
+                }
 }
 @media (max-width: 560px) {
     /* COINMARKET  */
@@ -54,8 +58,8 @@
     #searchInput {
         padding: 3px;
     }
-     /* CONVERTOR  */
-     .ConverterDiv {
+     /* CONVERTOR REGISTRATION LOGIN  */
+     .ConverterDiv  , .register_box, .loginform_box  {
         max-width: 80%;
     }
 .Converter_p {

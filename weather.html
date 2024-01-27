@@ -20,8 +20,9 @@
         <header>
             <a href="index.html" class="main_logo">Crypto.Com<i class="fa-solid  fa-earth-europe"></i></a>
             <ul class="headerUl">
-                <li><a href="coinmarket.html" class="headerUl_a">Converter</a></li>
                 <li><a href="weather.html" class="headerUl_a">Weather</a></li>
+
+                <li><a href="aboutus.html" class="headerUl_a">About Us</a></li>
                 <li><a href="registerForm.html" class="headerUl_a">Registration</a></li>
                 <li><a href="loginForm.html" class="headerUl_a">Log In</a></li>
 
@@ -32,35 +33,26 @@
 
         </header>
         <!-- section  -->
-        <section class="banner">
+        <section class="banner_weather">
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="coinmarket.html">Converter</a></li>
                 <li><a href="weather.html">Weather</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="registerForm.html">Registration</a></li>
                 <li><a href="loginForm.html">Log In</a></li>
             </ul>
+            <p class="display_hide">abrakadabra</p>
 
-
-            <div class="card_div card_div_background">
+            <div class="card_div card_div_background weather_box">
                 <h1 class="weather_h1">Find out the weather around the world</h1>
                 <input id="city" placeholder="Enter your city">
                 <button type="submit" id="submitData" onclick="resolveWeatherInfo()">Send</button>
                 <div id="result"></div>
             </div>
-            <div class="slider">
-                <img class="none active" src="images/R (2).jpg" alt="">
-                <img class="none" src="images/4707459.jpg" alt="">
-                <img class="none" src="images/R.jpg" alt="">
-                <img class="none" src="images/R (1).jpg" alt="">
-                <img class="none" src="images/sea.jpg" alt="">
-                <img class="none" src="images/sunset_sun_dark_161572_1920x1080.jpg" alt="">
-            </div>
-            <a class="previous" onclick="pervSlide()"></a>
-            <a class="next" onclick="nextSlide()"></a>
         </section>
         <!-- footer  -->
+    </div>
+
         <footer>
             <div class="footer_leftbox">
                 <a href="aboutus.html">
@@ -110,9 +102,10 @@
         </footer>
 
 
-
-    </div>
     <script src="scripts/script.js"></script>
 </body>
 
 </html>
+
+
+

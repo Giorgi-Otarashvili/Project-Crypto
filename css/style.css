@@ -143,13 +143,12 @@ z-index: -1000000;
 }
 
 /* SECTION  */
-/* Weather API  */
 
 .banner {
     background-size: cover;
     background-position: center ;
     object-fit: cover;
-    background-image: url(../images/eth.jpg);
+    background-image: url(../images/solana.png);
     height: 1000px;
 }
  .card_div {
@@ -169,7 +168,7 @@ z-index: -1000000;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    background-color: rgba(13, 14, 26, 0.6);
+    background-color: rgba(13, 14, 26, 0.75);
 }
 .crypto {
     text-align: center;
@@ -261,8 +260,28 @@ button {
 #submitData:hover {
     background-color: #0a0c3e;
 }
-#city::placeholder {
+
+/* WEATHER  */
+.banner_weather {
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/sea.jpg);
+    height: 1000px;
+}
+
+.weather_box {
+    margin: 230px auto  15px;
     color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    border: none;
+    max-width: 50%;
+
+
+}
+#city::placeholder {
+    color: #f9f1f14a;
     font-style: italic;
     font-family: 'Playfair Display'
 }
@@ -336,6 +355,14 @@ align-items: center;
 row-gap: 20px;}
 
 /* ABOUT US */
+
+.banner_aboutus {
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/eth.jpg);
+    height: 1000px;
+}
 
 .about_txt {
     color: #fff;
@@ -546,9 +573,41 @@ width: 200px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
 }
+/* REGISTRATION  */ 
+.banner_register {
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/sunset_sun_dark_161572_1920x1080.jpg);
+    height: 1000px;
+}
+
+.register_box {
+    margin: 230px auto  15px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    border: none;
+    max-width: 50%;
+}
 
 
 /* LogIn  */ 
+.banner_login{
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/R.jpg);
+    height: 1000px;
+}
+.loginform_box {
+    margin: 230px auto  15px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    border: none;
+    max-width: 50%;
+}
 .login_h3 {
     font-family: 'Roboto Slab', serif;
 font-size: 20px;
@@ -559,6 +618,23 @@ text-align:center;
 }
 
 /* Login SUccess  */ 
+.banner_loginsuccess {
+    background-size: cover;
+    background-position: center ;
+    object-fit: cover;
+    background-image: url(../images/crypto.jpg);
+    height: 1000px;
+}
+.loginSuccess_box {
+    margin: 230px auto  15px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display';
+    border: none;
+    max-width: 50%;
+    text-align: center;
+
+}
 .subscription_p {
     color: #fff;
 }
