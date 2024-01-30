@@ -48,21 +48,6 @@ backToMarket.addEventListener("click", () => {
   market.style.display = "block"
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // let slidesContainer = document.querySelector(".slider ") // სლაიდერის გაკეთება
 // let slides = slidesContainer.getElementsByTagName("img")
 
@@ -136,7 +121,7 @@ const cityCapitalized = city.charAt(0).toUpperCase() + city.slice(1)
 
           if (weatherCode < 3) {
             result.innerHTML = `<p>In ${cityCapitalized} temperature is ${temperature}°C</p>
-            <p>Weather: <i class="fa-solid fa-sun"></i></p>
+            <p>Weather: <i class="fa-solid fa-temperature-half"></i></p>
             <span>Windspeed: ${windSpeed} km/h</span>`;
           } else if (weatherCode >= 3 && weatherCode < 50) {
             result.innerHTML = `<p>In ${cityCapitalized} temperature is ${temperature}°C</p>

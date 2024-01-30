@@ -157,11 +157,6 @@ z-index: -1000000;
 }
 
 .card_div_background {
-    /* position: absolute;
-     top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);  */
-    /* max-width: 400px; */
     width: 100%;
     padding: 20px;
         border: 1px solid #ccc;
@@ -197,7 +192,6 @@ z-index: -1000000;
     max-width: 50%;
     display: none;
 
-    /* max-height: 600px; */
  
 }
 .display_hide {
@@ -301,8 +295,8 @@ text-align: center;
 }
 
 
-.fa-sun {
-    color: yellow;
+.fa-fa-temperature-half {
+    color:red;
 }
 
 
